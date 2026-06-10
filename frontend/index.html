@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Base App Frontend</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main>
+    <h1>Base App Frontend</h1>
+    <p id="message">Loading backend message...</p>
+    <button id="reload">Refresh Message</button>
+
+    <form id="register-form">
+      <h2>Save User</h2>
+      <label>
+        Name
+        <input id="full-name" autocomplete="name" placeholder="Alex Chen" />
+      </label>
+      <label>
+        Email
+        <input id="email" type="email" autocomplete="email" placeholder="alex@example.com" required />
+      </label>
+      <label>
+        Password
+        <input id="password" type="password" autocomplete="new-password" minlength="8" required />
+      </label>
+      <label>
+        Role
+        <select id="role">
+          <option value="researcher">Researcher</option>
+          <option value="commissioner">Commissioner</option>
+        </select>
+      </label>
+      <button type="submit">Save to Backend</button>
+      <p id="save-status" aria-live="polite"></p>
+    </form>
+  </main>
+  <script src="/api.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
