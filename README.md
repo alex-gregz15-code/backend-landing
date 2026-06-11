@@ -39,6 +39,11 @@ Notes: The repository Dockerfile builds a release binary and packages it into a 
 **API**
 - See full endpoint list in [docs/API.md](docs/API.md).
 
+**Deployment**
+- **Render** (recommended): See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for step-by-step instructions.
+- **Docker**: Deploy using `docker-compose.yml` locally or with Docker registry.
+- **Environment variables**: See `.env.example` for required vars.
+
 **Project layout**
 - `src/main.rs` — HTTP server, routing and handlers.
 - `src/` — other modules (db.rs, engine.rs, routes, api, security).
